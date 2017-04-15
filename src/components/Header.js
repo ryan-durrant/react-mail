@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "react-router";
 
 export default class Header extends React.Component {
 	render() {
@@ -12,10 +13,14 @@ export default class Header extends React.Component {
 						src="assets/react-logo.svg"
 						style={ styles.logoImage }
 					/>
-					<h1 style={ styles.header }>rMail</h1>
+				//Clicking on this link will take you to this route
+				// <Link to="/"><h1 style={ styles.header }>rMail</h1></Link>
 				</div>
 
 				<div>
+					<Link to="/inbox">
+						<span style={styles.link}>Inbox</span>
+					</Link>
 				</div>
 			</header>
 		);

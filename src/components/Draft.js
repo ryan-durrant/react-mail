@@ -1,4 +1,6 @@
 import React from "react";
+import ReactDOM from "react-dom";
+import { Router, Route, browserHistory } from "react-router";
 
 export default class Draft extends React.Component {
 	render() {
